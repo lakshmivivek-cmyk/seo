@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seo-helpers"
+version = "0.1.0"
+description = "Reusable Python helpers for SEO workflows"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Vivek" }]
+requires-python = ">=3.11"
+
+# List the libraries your seo_helpers code imports.
+# Uncomment or add as needed, e.g.:
+dependencies = [
+    # "requests",
+    # "pandas",
+    # "python-dotenv",
+    # "google-api-python-client",   # Search Console API
+    # "google-auth",
+]
+
+[tool.setuptools.packages.find]
+include = ["seo_helpers*"]

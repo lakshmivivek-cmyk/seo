@@ -1,0 +1,62 @@
+# ============================================
+# Secrets & environment
+# ============================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ============================================
+# Data files (never commit real documents)
+# ============================================
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.csv
+!fixtures/**              # fake test files are allowed
+
+# ============================================
+# Outputs
+# ============================================
+outputs/*
+!outputs/.gitkeep
+
+# ============================================
+# Private prompts
+# ============================================
+prompts/private/
+
+# ============================================
+# Editors & OS
+# ============================================
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.directory               # KDE Dolphin folder settings
+
+# ============================================
+# AI tools & logs
+# ============================================
+.claude/
+*.log
